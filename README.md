@@ -12,18 +12,16 @@
 
 ## Indice
 
-- [1.1 Historia y evolución de la graficación por computadora](#11-historia-y-evolucion-de-la-graficacion-por-computadora)
-- [1.2 Áreas de aplicación](#12-areas-de-aplicacion)
-- [1.3 Aspectos matemáticos de la graficación](#13-aspectos-matematicos-de-la-graficacion)
+- [1.1 Historia y evolución de la graficación por computadora](#11-historia-y-evolución-de-la-graficación-por-computadora)
+- [1.2 Áreas de aplicación](#12-áreas-de-aplicación)
+- [1.3 Aspectos matemáticos de la graficación](#13-aspectos-matemáticos-de-la-graficación)
 - [1.4 Modelos del color RGB, CMY, HSV y HSL](#14-modelos-del-color-rgb-cmy-hsv-y-hsl)
-- [Tutorial Iluminacion basica en Blender](#tutorial-iluminacion-basica-en-blender)
-- [1.5 Representación y trazo de líneas y polígonos](#15-representacion-y-trazo-de-lineas-y-poligonos)
-- [1.5.1 Representación vectorial vs raster](#151-representacion-vectorial-vs-raster)
-- [1.5.2 Formatos de imagen](#152-formatos-de-imagen)
+- [Tutorial Iluminación básica en Blender](#tutorial-iluminación-básica-en-blender)
+- [1.5 Representación y trazo de líneas y polígonos](#15-representación-y-trazo-de-líneas-y-polígonos)
+- [1.5.1 Formatos de imagen](#151-formatos-de-imagen)
 - [1.6 Procesamiento de mapas de bits](#16-procesamiento-de-mapas-de-bits)
 - [Conclusion](#conclusion)
 - [Bibliografia](#bibliografia)
-
 ---
 
 ## 1.1 Historia y evolución de la graficación por computadora
