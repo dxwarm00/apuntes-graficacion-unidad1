@@ -10,22 +10,19 @@
 
 ---
 
-## Índice
-
-### Unidad I – Introducción a la Graficación por Computadora
+## Indice
 
 - [1.1 Historia y evolución de la graficación por computadora](#11-historia-y-evolucion-de-la-graficacion-por-computadora)
 - [1.2 Áreas de aplicación](#12-areas-de-aplicacion)
 - [1.3 Aspectos matemáticos de la graficación](#13-aspectos-matematicos-de-la-graficacion)
-- [1.4 Modelos del color: RGB, CMY, HSV y HSL](#14-modelos-del-color-rgb-cmy-hsv-y-hsl)
-  - [Tutorial: Iluminación básica en Blender](#tutorial-iluminacion-basica-en-blender)
+- [1.4 Modelos del color RGB, CMY, HSV y HSL](#14-modelos-del-color-rgb-cmy-hsv-y-hsl)
+- [Tutorial Iluminacion basica en Blender](#tutorial-iluminacion-basica-en-blender)
 - [1.5 Representación y trazo de líneas y polígonos](#15-representacion-y-trazo-de-lineas-y-poligonos)
-  - [1.5.1 Formatos de imagen](#151-formatos-de-imagen)
-  - [Práctica: Dibujo de un polígono](#practica-dibujo-de-un-poligono)
-  - [Práctica: Flor de la vida](#practica-flor-de-la-vida)
+- [1.5.1 Representación vectorial vs raster](#151-representacion-vectorial-vs-raster)
+- [1.5.2 Formatos de imagen](#152-formatos-de-imagen)
 - [1.6 Procesamiento de mapas de bits](#16-procesamiento-de-mapas-de-bits)
-- [Conclusión](#conclusion)
-- [Bibliografía](#bibliografia)
+- [Conclusion](#conclusion)
+- [Bibliografia](#bibliografia)
 
 ---
 
@@ -208,11 +205,13 @@ La graficación por computadora se fundamenta en modelos matemáticos que permit
 Todo objeto gráfico se define mediante coordenadas.
 
 En dos dimensiones:
+
 $$
 (x, y)
 $$
 
 En tres dimensiones:
+
 $$
 (x, y, z)
 $$
@@ -352,9 +351,9 @@ donde el valor cambia gradualmente entre el fotograma inicial y final.
 
 - El polígono 2D utilizó trigonometría para calcular vértices uniformemente distribuidos.
 - La Flor de la Vida aplicó distribución angular mediante:
-  $$
-  \theta = \frac{360^\circ}{n}
-  $$
+$$
+\theta = \frac{360^\circ}{n}
+$$
 - El escenario procedural aplicó traslación, rotación y escalamiento.
 - La animación utilizó interpolación de parámetros.
 
@@ -540,7 +539,7 @@ La representación de líneas y polígonos constituye la base de la construcció
 
 ---
 
-### 1.5.1 Representación vectorial vs raster
+### 1.5.1.1 Representación vectorial vs raster
 
 Existen dos formas principales de representar gráficos:
 
@@ -583,7 +582,7 @@ Desventajas:
 
 ---
 
-### 1.5.2 Trazado de líneas
+### 1.5.2.1 Trazado de líneas
 
 Para dibujar líneas en pantallas rasterizadas se utilizan algoritmos específicos.
 
@@ -593,7 +592,7 @@ Este algoritmo es fundamental en sistemas gráficos de bajo nivel.
 
 ---
 
-### 1.5.3 Representación de polígonos
+### 1.5.3.1 Representación de polígonos
 
 Un polígono se define como un conjunto de vértices conectados por aristas.
 
@@ -620,9 +619,11 @@ Este principio fue aplicado en la práctica del polígono 2D mediante scripting 
 ### Relación con las prácticas desarrolladas
 
 - La práctica del polígono utilizó trigonometría para generar vértices uniformemente distribuidos.
+  
 <img width="1001" height="501" alt="image" src="https://github.com/user-attachments/assets/6d5d023c-63e5-43d4-92a5-c472b332040f" />
 
 - La Flor de la Vida aplicó repetición angular para formar patrones geométricos.
+  
 <img width="884" height="604" alt="image" src="https://github.com/user-attachments/assets/05c4d5da-50e4-483a-87a0-f3152750170e" />
 <img width="1052" height="560" alt="image" src="https://github.com/user-attachments/assets/2dc17cbf-dfa9-45ba-8a2c-b48018dcf4da" />
 
@@ -635,3 +636,220 @@ Este principio fue aplicado en la práctica del polígono 2D mediante scripting 
 La representación digital de líneas y polígonos es el fundamento estructural de la graficación por computadora. Ya sea en formato vectorial o raster, todo sistema gráfico depende de modelos matemáticos para describir y renderizar formas en pantalla.
 
 ---
+
+### 1.5.1 Formatos de imagen
+
+Los formatos de imagen determinan cómo se almacena y comprime la información visual en un archivo digital. En graficación por computadora, comprender sus diferencias es esencial para elegir el formato adecuado según el uso.
+
+---
+
+#### Imágenes raster
+
+Las imágenes raster (mapa de bits) almacenan la información como una matriz de píxeles:
+
+$$
+Imagen = f(x, y)
+$$
+
+Cada píxel contiene valores de color (generalmente en RGB).
+
+---
+
+#### Principales formatos
+
+##### PNG (Portable Network Graphics)
+
+- Compresión sin pérdida
+- Soporta transparencia (canal alfa)
+- Ideal para gráficos digitales y renders
+
+##### JPEG / JPG (Joint Photographic Experts Group)
+
+- Compresión con pérdida
+- Reduce tamaño de archivo
+- Ideal para fotografías
+- No recomendable para imágenes con texto o bordes definidos
+
+##### BMP (Bitmap)
+
+- Sin compresión
+- Archivos grandes
+- Uso histórico en sistemas Windows
+
+##### TIFF (Tagged Image File Format)
+
+- Alta calidad
+- Soporta múltiples capas
+- Usado en impresión profesional
+
+##### GIF (Graphics Interchange Format)
+
+- Limitado a 256 colores
+- Soporta animaciones
+- Ideal para secuencias cortas (como la animación del proyecto)
+
+---
+
+### Comparación técnica
+
+| Formato | Tipo de compresión | Transparencia | Uso recomendado |
+|----------|-------------------|--------------|------------------|
+| PNG | Sin pérdida | Sí | Render y gráficos digitales |
+| JPEG | Con pérdida | No | Fotografías |
+| BMP | Sin compresión | No | Uso básico |
+| TIFF | Sin pérdida | Sí | Impresión profesional |
+| GIF | Con pérdida limitada | Sí | Animaciones cortas |
+
+---
+
+### Relación con las prácticas
+
+En el proyecto integrador:
+
+- El render del escenario puede exportarse como **PNG** para mantener calidad.
+- La animación del recorrido se exportó como **GIF** para visualización en GitHub.
+- La elección del formato influye en la calidad y peso del archivo final.
+
+
+![AnimationEscenario](https://github.com/user-attachments/assets/d5f492e9-3669-4d56-a7fa-9d0db10376a3)
+
+
+---
+
+### Conclusión del apartado
+
+La selección del formato de imagen impacta directamente en la calidad visual, tamaño del archivo y compatibilidad. En entornos digitales como Blender y GitHub, el formato PNG es ideal para imágenes estáticas, mientras que GIF permite representar animaciones cortas.
+
+## 1.6 Procesamiento de mapas de bits
+
+El procesamiento de mapas de bits consiste en la manipulación directa de imágenes rasterizadas, es decir, imágenes compuestas por una matriz de píxeles donde cada elemento contiene información de color.
+
+En términos matemáticos, una imagen digital puede representarse como:
+
+$$
+I(x, y) = (R, G, B)
+$$
+
+donde cada coordenada $(x, y)$ corresponde a un píxel con valores de color.
+
+---
+
+### 1.6.1 Resolución
+
+La resolución determina la cantidad de píxeles que componen una imagen.
+
+Se expresa como:
+
+$$
+Resolución = ancho \times alto
+$$
+
+Por ejemplo:
+
+1920 × 1080 = 2,073,600 píxeles.
+
+A mayor resolución:
+- Mayor detalle
+- Mayor peso de archivo
+- Mayor consumo de memoria
+
+---
+
+### 1.6.2 Profundidad de color
+
+La profundidad de color indica cuántos bits se utilizan para representar el color de cada píxel.
+
+Ejemplo común:
+
+- 8 bits por canal (RGB)
+- Total: 24 bits por píxel
+
+Número de colores posibles:
+
+$$
+2^{24} = 16,777,216 \text{ colores}
+$$
+
+Esto permite representar imágenes con alta fidelidad cromática.
+
+---
+
+### 1.6.3 Operaciones sobre píxeles
+
+El procesamiento digital de imágenes incluye operaciones como:
+
+- Ajuste de brillo
+- Contraste
+- Conversión a escala de grises
+- Aplicación de filtros
+- Detección de bordes
+
+Por ejemplo, una conversión simple a escala de grises puede aproximarse como:
+
+$$
+Gris = \frac{R + G + B}{3}
+$$
+
+---
+
+### 1.6.4 Compresión de imágenes
+
+Los mapas de bits pueden comprimirse para reducir tamaño de archivo.
+
+Existen dos tipos principales:
+
+- Compresión sin pérdida (PNG, TIFF)
+- Compresión con pérdida (JPEG)
+
+La compresión con pérdida elimina información visual menos perceptible para el ojo humano.
+
+---
+
+### 1.6.5 Relación con el renderizado en Blender
+
+Cuando se renderiza una escena en Blender:
+
+- El resultado final es un mapa de bits.
+- Cada píxel es calculado mediante algoritmos de iluminación.
+- La calidad depende de:
+  - Resolución
+  - Muestras de render
+  - Profundidad de color
+  - Formato de exportación
+
+La exportación en PNG preserva calidad sin pérdida, mientras que JPEG reduce tamaño sacrificando información visual.
+
+---
+
+### Conclusión del apartado
+
+El procesamiento de mapas de bits es fundamental en la etapa final de la graficación por computadora. Aunque el modelado y las transformaciones se basan en representaciones vectoriales, el resultado visible siempre termina siendo una imagen raster compuesta por millones de píxeles calculados matemáticamente.
+
+---
+
+## Conclusion
+
+La graficacion por computadora integra fundamentos matematicos, modelos de color y tecnicas de representacion digital que permiten construir entornos visuales complejos a partir de principios geometricos y algebraicos.
+
+A lo largo de la Unidad I se analizaron:
+
+- La evolucion historica de la disciplina
+- Sus areas de aplicacion en ingenieria, ciencia y entretenimiento
+- Los modelos matematicos que sustentan las transformaciones
+- Los modelos de color utilizados en entornos digitales
+- La representacion de lineas y poligonos
+- El procesamiento de mapas de bits como resultado final del renderizado
+
+Las practicas desarrolladas en Blender permitieron aplicar estos fundamentos teoricos en un entorno real, demostrando que cada modelo digital es el resultado de operaciones matematicas precisas.
+
+La graficacion por computadora no es solo una herramienta visual, sino una disciplina que combina matematica, programacion y diseño para representar el mundo digital de manera estructurada y eficiente.
+
+## Bibliografia
+
+Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (1996). *Computer Graphics: Principles and Practice* (2nd ed.). Addison-Wesley.
+
+Hughes, J. F., van Dam, A., McGuire, M., Sklar, D., Foley, J., Feiner, S., & Akeley, K. (2014). *Computer Graphics: Principles and Practice* (3rd ed.). Addison-Wesley.
+
+Shirley, P., Ashikhmin, M., & Marschner, S. (2009). *Fundamentals of Computer Graphics* (3rd ed.). A K Peters.
+
+Sutherland, I. E. (1963). Sketchpad: A Man-Machine Graphical Communication System. Massachusetts Institute of Technology.
