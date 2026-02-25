@@ -842,12 +842,10 @@ Las practicas desarrolladas en Blender permitieron aplicar estos fundamentos teo
 
 La graficacion por computadora no es solo una herramienta visual, sino una disciplina que combina matematica, programacion y diseño para representar el mundo digital de manera estructurada y eficiente.
 
-## Bibliografia
+## Bibliografía
 
-Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (1996). *Computer Graphics: Principles and Practice* (2nd ed.). Addison-Wesley.
+González, R. C., & Woods, R. E. (2008). *Procesamiento digital de imágenes* (3.a ed.). Pearson Educación.  
 
-Hughes, J. F., van Dam, A., McGuire, M., Sklar, D., Foley, J., Feiner, S., & Akeley, K. (2014). *Computer Graphics: Principles and Practice* (3rd ed.). Addison-Wesley.
+Foley, J. D., van Dam, A., Feiner, S. K., & Hughes, J. F. (2004). *Gráficos por computadora: Principios y práctica* (2.a ed.). Addison-Wesley Iberoamericana.  
 
-Shirley, P., Ashikhmin, M., & Marschner, S. (2009). *Fundamentals of Computer Graphics* (3rd ed.). A K Peters.
-
-Sutherland, I. E. (1963). Sketchpad: A Man-Machine Graphical Communication System. Massachusetts Institute of Technology.
+Hearn, D., D., & Baker, M. P. (2006). *Gráficos por computadora con OpenGL* (3.a ed.). Pearson Educación.
