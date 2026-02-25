@@ -22,9 +22,10 @@
 - [1.6 Procesamiento de mapas de bits](#16-procesamiento-de-mapas-de-bits)
 - [Conclusion](#conclusion)
 - [Bibliografia](#bibliografia)
+  
 ---
-
 ## 1.1 Historia y evolución de la graficación por computadora
+---
 
 ### Orígenes (1960–1970)
 
@@ -32,7 +33,6 @@ La graficación por computadora surge formalmente en 1963 con el sistema **Sketc
 
 En esta etapa predominaban los **gráficos vectoriales**, donde las imágenes se representaban mediante ecuaciones matemáticas en lugar de píxeles. Cada línea y figura era descrita a través de coordenadas y funciones matemáticas.
 
----
 
 ### Expansión industrial (1970–1990)
 
@@ -47,7 +47,6 @@ Durante este periodo se consolidaron sistemas como:
 
 La graficación comenzó a utilizarse en ingeniería, manufactura y diseño estructural.
 
----
 
 ### Revolución de las GPU (1990–2005)
 
@@ -62,7 +61,6 @@ Se desarrollaron técnicas fundamentales como:
 
 Esto permitió la expansión de los videojuegos 3D, simuladores y animación digital.
 
----
 
 ### Era moderna (2005–Actualidad)
 
@@ -76,7 +74,6 @@ Actualmente, la graficación por computadora integra:
 
 El desarrollo de motores gráficos y software como Blender ha democratizado el acceso a herramientas profesionales de creación digital.
 
----
 
 ### Línea temporal resumida
 
@@ -86,19 +83,17 @@ El desarrollo de motores gráficos y software como Blender ha democratizado el a
 2000 → Renderizado en tiempo real  
 Actualidad → Ray tracing y simulación avanzada  
 
----
 
 ### Conclusión del apartado
 
 La evolución de la graficación por computadora está estrechamente ligada al desarrollo del hardware y de los modelos matemáticos que permiten representar digitalmente el espacio tridimensional. Su progreso ha impactado áreas industriales, científicas y artísticas, consolidándose como una disciplina fundamental en la tecnología moderna.
 
 ---
-
 ## 1.2 Áreas de aplicación
+---
 
 La graficación por computadora tiene aplicaciones en múltiples disciplinas científicas, técnicas y artísticas. Su capacidad para representar información visualmente permite modelar, simular y analizar fenómenos complejos.
 
----
 
 ### 1.2.1 Ingeniería y arquitectura
 
@@ -116,7 +111,6 @@ En arquitectura permite:
 - Simulación de iluminación
 - Representaciones fotorrealistas de proyectos
 
----
 
 ### 1.2.2 Medicina y ciencia
 
@@ -133,7 +127,6 @@ En la investigación científica se utiliza para:
 - Simulación de fenómenos físicos
 - Representación de modelos matemáticos complejos
 
----
 
 ### 1.2.3 Entretenimiento digital
 
@@ -146,7 +139,6 @@ Una de las áreas más conocidas es el entretenimiento:
 
 La implementación de motores gráficos permite el renderizado en tiempo real, simulaciones físicas y entornos interactivos.
 
----
 
 ### 1.2.4 Simulación y entrenamiento
 
@@ -159,7 +151,6 @@ Se emplea en:
 
 Estos sistemas permiten recrear entornos controlados para capacitación sin riesgos físicos.
 
----
 
 ### 1.2.5 Visualización de datos y análisis
 
@@ -170,7 +161,6 @@ En ciencia de datos y estadística, la graficación permite:
 - Interpretar tendencias
 - Facilitar la toma de decisiones
 
----
 
 ### Relación con herramientas actuales
 
@@ -184,19 +174,17 @@ Software como Blender integra muchas de estas aplicaciones, permitiendo:
 
 Esto demuestra cómo los fundamentos teóricos se aplican en herramientas modernas de creación digital.
 
----
 
 ### Conclusión del apartado
 
 La graficación por computadora no se limita al ámbito artístico, sino que constituye una herramienta transversal en ingeniería, medicina, simulación y análisis científico. Su evolución tecnológica ha ampliado constantemente sus campos de aplicación, consolidándola como una disciplina esencial en el desarrollo tecnológico contemporáneo.
 
 ---
-
 ## 1.3 Aspectos matemáticos de la graficación
+---
 
 La graficación por computadora se fundamenta en modelos matemáticos que permiten representar, transformar y proyectar objetos dentro de un espacio digital. Las principales áreas involucradas son el álgebra lineal, la geometría analítica y la trigonometría.
 
----
 
 ### 1.3.1 Sistemas de coordenadas
 
@@ -216,13 +204,11 @@ $$
 
 Cada vértice de un modelo 3D es un punto dentro de un sistema cartesiano. A partir de estos puntos se construyen aristas, caras y superficies.
 
----
 
 ### 1.3.2 Transformaciones geométricas
 
 Las transformaciones permiten modificar posición, tamaño y orientación de los objetos.
 
----
 
 #### Traslación
 
@@ -248,7 +234,6 @@ bpy.ops.mesh.primitive_cube_add(location=(-ancho_pasillo, i * 2, 1))
 
 Aquí, el término `i * 2` representa el desplazamiento progresivo.
 
----
 
 #### Escalamiento
 
@@ -274,7 +259,6 @@ pared_izq.scale.z = 1.5
 
 se aplicó un escalamiento vertical.
 
----
 
 #### Rotación en el plano
 
@@ -297,7 +281,6 @@ y = cy + radio_curva * math.sin(angulo)
 
 Aquí, seno y coseno permiten distribuir objetos sobre una circunferencia.
 
----
 
 ### 1.3.3 Matrices de transformación
 
@@ -317,7 +300,6 @@ Multiplicar un vector por esta matriz produce su rotación.
 
 Las matrices permiten combinar múltiples transformaciones en una sola operación, optimizando cálculos en motores gráficos.
 
----
 
 ### 1.3.4 Coordenadas homogéneas
 
@@ -329,7 +311,6 @@ $$
 
 Esto permite expresar todas las transformaciones como multiplicaciones de matrices 4×4, fundamentales en gráficos 3D.
 
----
 
 ### 1.3.5 Interpolación y animación
 
@@ -343,7 +324,6 @@ $$
 
 donde el valor cambia gradualmente entre el fotograma inicial y final.
 
----
 
 ### Relación con las prácticas realizadas
 
@@ -355,17 +335,16 @@ $$
 - El escenario procedural aplicó traslación, rotación y escalamiento.
 - La animación utilizó interpolación de parámetros.
 
----
 
 ### Conclusión del apartado
 
 La graficación por computadora es una aplicación directa del álgebra lineal y la trigonometría. Cada modelo 3D, animación o simulación es el resultado de operaciones matemáticas precisas que permiten representar el espacio digital de manera coherente y eficiente.
 
+---
 ## 1.4 Modelos del color: RGB, CMY, HSV y HSL
+---
 
 El color en graficación por computadora se representa mediante modelos matemáticos que permiten describir tonalidades de forma numérica. Cada modelo responde a una necesidad distinta, ya sea para dispositivos digitales, impresión o manipulación visual.
-
----
 
 ### 1.4.1 Modelo RGB (Red, Green, Blue)
 
@@ -402,7 +381,6 @@ En el proyecto procedural se utilizó RGB al definir materiales:
 bsdf.inputs['Base Color'].default_value = (*color_rgb, 1.0)
 ```
 
----
 
 ### 1.4.2 Modelo CMY (Cyan, Magenta, Yellow)
 
@@ -430,7 +408,6 @@ $$
 
 Cuando se añade negro (K) se obtiene el modelo CMYK utilizado en imprentas.
 
----
 
 ### 1.4.3 Modelo HSV (Hue, Saturation, Value)
 
@@ -448,7 +425,6 @@ $$
 
 Este modelo es útil en interfaces gráficas y herramientas de edición.
 
----
 
 ### 1.4.4 Modelo HSL (Hue, Saturation, Lightness)
 
@@ -462,7 +438,6 @@ $$
 
 Este modelo facilita ajustes de iluminación y contraste.
 
----
 
 ### Comparación de modelos
 
@@ -474,8 +449,8 @@ Este modelo facilita ajustes de iluminación y contraste.
 | HSL | Perceptual | Ajustes de luz | Diseño visual |
 
 ---
-
 ## Tutorial: Iluminación básica en Blender
+---
 
 La iluminación es fundamental para percibir el color correctamente.
 
@@ -485,7 +460,6 @@ La iluminación es fundamental para percibir el color correctamente.
 bpy.ops.mesh.primitive_cube_add(size=2, location=(0, 0, 0))
 ```
 
----
 
 ### Paso 2 – Asignar material RGB
 
@@ -497,7 +471,6 @@ bsdf.inputs['Base Color'].default_value = (0.2, 0.5, 0.8, 1)
 bpy.context.active_object.data.materials.append(mat)
 ```
 
----
 
 ### Paso 3 – Agregar luz tipo SUN
 
@@ -505,7 +478,6 @@ bpy.context.active_object.data.materials.append(mat)
 bpy.ops.object.light_add(type='SUN', location=(5, 5, 5))
 ```
 
----
 
 ### Paso 4 – Renderizar
 
@@ -516,7 +488,6 @@ La percepción del color dependerá de:
 - Rugosidad del material
 - Modelo de color aplicado
 
----
 
 ### Evidencia visual en Blender
 
@@ -531,11 +502,12 @@ La siguiente imagen muestra un cubo con material definido en el modelo RGB e ilu
 
 Los modelos de color permiten representar digitalmente la luz y la pigmentación mediante valores numéricos. En graficación por computadora, el modelo RGB domina en entornos digitales, mientras que HSV y HSL facilitan la manipulación visual. La iluminación en motores gráficos como Blender demuestra cómo estos modelos interactúan con materiales y fuentes de luz.
 
+---
 ## 1.5 Representación y trazo de líneas y polígonos
+---
 
 La representación de líneas y polígonos constituye la base de la construcción gráfica digital. Todo modelo 3D está compuesto por vértices, aristas y caras que forman estructuras geométricas.
 
----
 
 ### 1.5.1.1 Representación vectorial vs raster
 
@@ -559,7 +531,6 @@ Ventajas:
 
 Blender trabaja principalmente con representación vectorial.
 
----
 
 #### Representación raster (mapa de bits)
 
@@ -578,7 +549,6 @@ Ventajas:
 Desventajas:
 - Pierde calidad al escalar
 
----
 
 ### 1.5.2.1 Trazado de líneas
 
@@ -588,7 +558,6 @@ Uno de los más importantes es el **Algoritmo de Bresenham**, que permite determ
 
 Este algoritmo es fundamental en sistemas gráficos de bajo nivel.
 
----
 
 ### 1.5.3.1 Representación de polígonos
 
@@ -612,7 +581,6 @@ $$
 
 Este principio fue aplicado en la práctica del polígono 2D mediante scripting en Blender.
 
----
 
 ### Relación con las prácticas desarrolladas
 
@@ -627,19 +595,17 @@ Este principio fue aplicado en la práctica del polígono 2D mediante scripting 
 
 - Ambos ejercicios demuestran cómo los fundamentos matemáticos permiten construir estructuras complejas a partir de reglas simples.
 
----
 
 ### Conclusión del apartado
 
 La representación digital de líneas y polígonos es el fundamento estructural de la graficación por computadora. Ya sea en formato vectorial o raster, todo sistema gráfico depende de modelos matemáticos para describir y renderizar formas en pantalla.
 
 ---
-
 ### 1.5.1 Formatos de imagen
+---
 
 Los formatos de imagen determinan cómo se almacena y comprime la información visual en un archivo digital. En graficación por computadora, comprender sus diferencias es esencial para elegir el formato adecuado según el uso.
 
----
 
 #### Imágenes raster
 
@@ -651,7 +617,6 @@ $$
 
 Cada píxel contiene valores de color (generalmente en RGB).
 
----
 
 #### Principales formatos
 
@@ -686,7 +651,6 @@ Cada píxel contiene valores de color (generalmente en RGB).
 - Soporta animaciones
 - Ideal para secuencias cortas (como la animación del proyecto)
 
----
 
 ### Comparación técnica
 
@@ -698,7 +662,6 @@ Cada píxel contiene valores de color (generalmente en RGB).
 | TIFF | Sin pérdida | Sí | Impresión profesional |
 | GIF | Con pérdida limitada | Sí | Animaciones cortas |
 
----
 
 ### Relación con las prácticas
 
@@ -712,13 +675,16 @@ En el proyecto integrador:
 ![AnimationEscenario](https://github.com/user-attachments/assets/d5f492e9-3669-4d56-a7fa-9d0db10376a3)
 
 
----
 
 ### Conclusión del apartado
 
 La selección del formato de imagen impacta directamente en la calidad visual, tamaño del archivo y compatibilidad. En entornos digitales como Blender y GitHub, el formato PNG es ideal para imágenes estáticas, mientras que GIF permite representar animaciones cortas.
 
+---
+
 ## 1.6 Procesamiento de mapas de bits
+
+---
 
 El procesamiento de mapas de bits consiste en la manipulación directa de imágenes rasterizadas, es decir, imágenes compuestas por una matriz de píxeles donde cada elemento contiene información de color.
 
@@ -730,7 +696,6 @@ $$
 
 donde cada coordenada $(x, y)$ corresponde a un píxel con valores de color.
 
----
 
 ### 1.6.1 Resolución
 
@@ -751,7 +716,6 @@ A mayor resolución:
 - Mayor peso de archivo
 - Mayor consumo de memoria
 
----
 
 ### 1.6.2 Profundidad de color
 
@@ -770,7 +734,6 @@ $$
 
 Esto permite representar imágenes con alta fidelidad cromática.
 
----
 
 ### 1.6.3 Operaciones sobre píxeles
 
@@ -788,7 +751,6 @@ $$
 Gris = \frac{R + G + B}{3}
 $$
 
----
 
 ### 1.6.4 Compresión de imágenes
 
@@ -801,7 +763,6 @@ Existen dos tipos principales:
 
 La compresión con pérdida elimina información visual menos perceptible para el ojo humano.
 
----
 
 ### 1.6.5 Relación con el renderizado en Blender
 
@@ -817,15 +778,14 @@ Cuando se renderiza una escena en Blender:
 
 La exportación en PNG preserva calidad sin pérdida, mientras que JPEG reduce tamaño sacrificando información visual.
 
----
 
 ### Conclusión del apartado
 
 El procesamiento de mapas de bits es fundamental en la etapa final de la graficación por computadora. Aunque el modelado y las transformaciones se basan en representaciones vectoriales, el resultado visible siempre termina siendo una imagen raster compuesta por millones de píxeles calculados matemáticamente.
 
 ---
-
-## Conclusion
+## Conclusión
+---
 
 La graficacion por computadora integra fundamentos matematicos, modelos de color y tecnicas de representacion digital que permiten construir entornos visuales complejos a partir de principios geometricos y algebraicos.
 
@@ -842,7 +802,9 @@ Las practicas desarrolladas en Blender permitieron aplicar estos fundamentos teo
 
 La graficacion por computadora no es solo una herramienta visual, sino una disciplina que combina matematica, programacion y diseño para representar el mundo digital de manera estructurada y eficiente.
 
+---
 ## Bibliografía
+---
 
 González, R. C., & Woods, R. E. (2008). *Procesamiento digital de imágenes* (3.a ed.). Pearson Educación.  
 
