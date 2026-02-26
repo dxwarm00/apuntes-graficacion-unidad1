@@ -16,8 +16,8 @@
 - [1.5 Representación y trazo de líneas y polígonos](#15-representación-y-trazo-de-líneas-y-polígonos)
 - [1.5.1 Formatos de imagen](#151-formatos-de-imagen)
 - [1.6 Procesamiento de mapas de bits](#16-procesamiento-de-mapas-de-bits)
-- [Conclusion](#conclusion)
-- [Bibliografia](#bibliografia)
+- [Conclusión](#conclusión)
+- [Bibliografía](#bibliografía)
   
 ---
 ## 1.1 Historia y evolución de la graficación por computadora
