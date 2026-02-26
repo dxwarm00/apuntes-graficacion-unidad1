@@ -1,12 +1,8 @@
 # Unidad I – Introducción a la Graficación por Computadora
 
-**Materia:** Graficación por Computadora  
+**Materia:** Graficación 
 **Unidad:** I  
 **Tipo de documento:** Investigación documental y aplicación práctica  
-
----
-
-> Documento académico digital desarrollado en formato interactivo.
 
 ---
 
