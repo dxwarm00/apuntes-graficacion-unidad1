@@ -444,6 +444,12 @@ Este modelo facilita ajustes de iluminación y contraste.
 | HSV | Perceptual | Edición de color | Interfaces |
 | HSL | Perceptual | Ajustes de luz | Diseño visual |
 
+#
+
+<p align="center">
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b81f3112-c145-4a64-82d5-0a3d38813c10" />
+</p>
+
 ---
 ## Tutorial: Iluminación básica en Blender
 ---
